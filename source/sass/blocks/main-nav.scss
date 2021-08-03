@@ -1,0 +1,14 @@
+.main-nav {
+  @include oswald-medium;
+  line-height: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__item a {
+  color: $basic-dark;
+}

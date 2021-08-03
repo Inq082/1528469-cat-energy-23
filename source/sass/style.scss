@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+// Global
+
+@import "./blocks/global/variables.scss";
+@import "./blocks/global/fonts.scss";
+@import "./blocks/global/global.scss";
+// Блоки
+
+//@import "blocks/page.scss";
+@import "blocks/page__body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo-img.scss";
+@import "blocks/logo-title.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promoblock.scss";
+@import "blocks/product-info.scss";
+@import "blocks/benefits.scss";
+@import "blocks/example.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/contacts-info.scss";
+@import "blocks/location.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/button.scss";
+
