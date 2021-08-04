@@ -1,0 +1,20 @@
+.site-list {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 65px;
+  width: 280px;
+  height: 264px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  background-color: $basic-white;
+}
+
+.site-list__item {
+  padding: 22px 0;
+}
+
+.site-list__item a {
+  color: $basic-dark;
+}

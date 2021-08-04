@@ -1,0 +1,53 @@
+.form__fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__label,
+.form__input {
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  color: $special_dark-grey;
+}
+
+.form__label-radio {
+  color: $special_dark-grey-2
+}
+
+.form__label-checkbox {
+  color: $basic-dark
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 26px;
+  padding: 25px 0;
+}
+
+.form__legend {
+  line-height: 16px;
+}
+
+.button__form {
+  border-style: none;
+  text-transform: uppercase;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: center;
+
+  @include oswald-regular;
+}
+.form__list {
+  @include reset-list;
+}
+.form__item {
+  color: $special_dark-grey;
+  padding-bottom: 20px;
+}
+.form__item input::placeholder {
+  color: $special_dark-grey;
+  opacity: 1;
+}

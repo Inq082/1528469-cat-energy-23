@@ -26,13 +26,33 @@ $main-orange-2: #fdc305;
 }
 
 @mixin oswald-medium {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
 @mixin arial ($font-size, $line-height) {
   font-family: "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Styles
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h3, h2 {
+  font-weight: normal;
+}
+
+// Button
+
+@mixin button ($font-size, $line-height) {
+  font-family: "Oswald", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
 }

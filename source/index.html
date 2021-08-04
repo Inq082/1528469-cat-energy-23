@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Функциональное питание для котов: Кэт энерджи</title>
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="page__body">
 <header class="page-header">
-  <div class="page-header__wrapper">
-    <a class="page-header__logo">
+  <div class="page-wrapper page-header__wrapper">
+    <a class="page-header__logo-img">
       <img src="img/logo-mobile.png" width="33" height="37" alt="Логотип компании Кэт Энерджи">
     </a>
     <a class="page-header__logo-text">
       <img src="img/logo-text.png" width="101" height="18" alt="Логотип компании Кэт Энерджи">
     </a>
     <nav class="main-nav">
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a> Главная </a></li>
-          <li class="main-nav__item"><a href="catalog.html"> Каталог продукции </a></li>
-          <li class="main-nav__item"><a href="form.html"> Подбор программы </a></li>
+      <input id="main-nav__toggle" type="checkbox">
+        <label class="main-nav__btn" for="main-nav__toggle">
+          <span></span>
+        </label>
+        <ul class="site-list">
+          <li class="site-list__item"><a href="#"> Главная </a></li>
+          <li class="site-list__item"><a href="catalog.html"> Каталог продукции </a></li>
+          <li class="site-list__item"><a href="form.html"> Подбор программы </a></li>
         </ul>
       </div>
     </nav>
@@ -40,11 +39,11 @@
         <img src="img/index-can-mobile.png" width="280" height="270"
              alt="Изображение функционального питания для котов">
       </div>
-      <a class="button promoblock__button" href="form.html">подобрать программу</a>
+      <a class="button button__small" href="form.html">Подобрать программу</a>
     </div>
   </section>
   <section class="product-info">
-    <div class="product-info__wrapper">
+    <div class="page-wrapper product-info__wrapper">
       <h2 class="product-info__title">похудение</h2>
       <p class="product-info__description">
         Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -53,7 +52,7 @@
       </p>
       <a class="product-info__link" href="#">каталог slim</a>
     </div>
-    <div class="product-info__wrapper">
+    <div class="page-wrapper product-info__wrapper">
       <h2 class="product-info__title">набор массы</h2>
       <p class="product-info__description">
         Заработать авторитет среди дворовых котов и даже собак?
@@ -82,7 +81,7 @@
     </div>
   </section>
   <section class="example">
-    <div class="page__wrapper example__wrapper">
+    <div class="page-wrapper example__wrapper">
     <h2 class="example__title">Живой пример</h2>
       <p class="example__text">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой
@@ -120,43 +119,43 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <section class="contacts-info page-footer__contacts-info">
-      <div class="contacts__wrapper">
+      <div class="page-wrapper">
         <h2 class="visually-hidden">Контактные данные</h2>
         <p class="contacts-info__title">приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts-info__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-  </section>
+    </section>
     <section class="location page-footer__location">
       <h2 class="visually-hidden">Карта</h2>
-        <img class="location__map" src="img/map.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="location__map" src="img/map.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     </section>
     <section class="page-footer__main">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <a class="logo page-footer__logo">
-      <img src="img/logo-text.png" width="128" height="24" alt="cat energy">
-    </a>
-    <div class="social page-footer__social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#">Мы в контакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Мы в instagram</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в facebook</a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright page-footer__copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-        <img src="img/logo-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
-      </a>
-    </div>
+      <div class="page-wrapper">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="logo page-footer__logo">
+          <img src="img/logo-text.png" width="128" height="24" alt="cat energy">
+        </a>
+        <div class="social page-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">Мы в контакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Мы в instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в facebook</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright page-footer__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <img src="img/logo-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
+          </a>
+        </div>
+      </div>
     </section>
-  </div>
   </div>
 </footer>
 </body>
-
 </html>

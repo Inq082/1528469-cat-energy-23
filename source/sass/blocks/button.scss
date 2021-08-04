@@ -1,9 +1,16 @@
 .button {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 280px;
   height: 40px;
   background-color: $basic-green;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  text-align: center;
+}
+.button__small {
   font-size: 14px;
   line-height: 18px;
-  color: $basic-white;
 }
