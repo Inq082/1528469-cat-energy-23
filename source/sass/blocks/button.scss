@@ -2,6 +2,7 @@
   @include buttons;
   background-color: $basic-green;
 }
+
 .button__small {
   font-size: 14px;
   line-height: 18px;
@@ -19,7 +20,8 @@
 }
 
 .button__product {
-  @include buttons;
   background-color: $basic-grey;
   color: $special_dark-grey;
+
+  @include buttons;
 }

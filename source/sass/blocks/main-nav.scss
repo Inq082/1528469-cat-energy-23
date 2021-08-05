@@ -30,26 +30,31 @@
   height: 2px;
   background-color: #616161;
 }
+
 .main-nav__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
+
 .main-nav__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 
 #main-nav__toggle:checked ~ .main-nav__btn > span {
   transform: rotate(45deg);
 }
+
 #main-nav__toggle:checked ~ .main-nav__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
+
 #main-nav__toggle:checked ~ .main-nav__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
+
 #main-nav__toggle:checked ~ .site-list {
   visibility: visible;
   left: 0;
