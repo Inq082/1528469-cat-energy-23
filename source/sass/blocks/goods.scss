@@ -10,5 +10,6 @@
 
 .goods__promo-text {
   @include arial (16px, 20px);
-  color: $main-light;
+  color: $basic-white;
+  text-align: center;
 }

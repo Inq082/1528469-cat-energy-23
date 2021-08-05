@@ -13,3 +13,9 @@
 .additional-goods__list {
   @include reset-list;
 }
+
+.additional-goods__description,
+.additional-goods__value {
+  @include arial (14px, 14px);
+  color: $special_dark-grey;
+}

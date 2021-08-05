@@ -1,13 +1,8 @@
 .product__link {
   color: $special_dark-grey-2;
-  font-size: 16px;
   line-height: 20px;
 }
 
-product-name {
-  font-size: 16px;
-  line-height: 16px;
-}
 .product__info {
   @include arial (12px, 16px);
   color: $special_dark-grey;
@@ -19,11 +14,20 @@ product-name {
 }
 
 .product__title {
-  text-transform: uppercase;
-  text-align: center;
+  @include products;
+}
+
+.product__more {
+  @include products;
+  line-height: 20px;
 }
 
 .product__more-link {
   background-color: $basic-grey;
   color: $special_dark-grey;
+}
+
+.product__others {
+  @include products;
+  line-height: 16px ;
 }

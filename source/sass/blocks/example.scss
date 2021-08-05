@@ -10,7 +10,6 @@
 .example__title {
   font-size: 36px;
   line-height: 40px;
-  font-weight: normal;
 }
 
 .example__text {
@@ -18,26 +17,6 @@
   color: $special_dark-grey;
 }
 
-.result__wrapper p {
-  padding: 0;
-  margin: 0;
-}
-
-.result__quantity {
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.result__value {
-  @include arial(12px, 12px);
-  color: $special_dark-grey;
-}
-
-.example__spending {
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
 
 .example__img-wrapper {
   position: relative;
@@ -58,6 +37,12 @@
 
 .example__switch-text {
   font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__spending {
+  font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }

@@ -2,11 +2,12 @@
 
 @import "./blocks/global/variables.scss";
 @import "./blocks/global/fonts.scss";
+@import "./blocks/global/mixins.scss";
 @import "./blocks/global/global.scss";
+
 // Блоки
 
 @import "blocks/page.scss";
-@import "blocks/page__body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo-img.scss";
 @import "blocks/logo-title.scss";
@@ -31,6 +32,7 @@
 @import "blocks/form.scss";
 @import "blocks/form-section.scss";
 @import "blocks/product-info.scss";
+@import "blocks/result.scss";
 
 
 

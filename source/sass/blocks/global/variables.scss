@@ -17,42 +17,6 @@ $basic-light-accent: #d9d9d9;
 $main-orange: #f06351;
 $main-orange-2: #fdc305;
 
-// Fonts
-
-@mixin oswald-regular {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
+h3, h2, h1 {
   font-weight: 400;
-}
-
-@mixin oswald-medium {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-
-@mixin arial ($font-size, $line-height) {
-  font-family: "Arial", sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
-// Styles
-
-@mixin reset-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h3, h2 {
-  font-weight: normal;
-}
-
-// Button
-
-@mixin button ($font-size, $line-height) {
-  font-family: "Oswald", sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
 }

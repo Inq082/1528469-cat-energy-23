@@ -1,16 +1,25 @@
 .button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 280px;
-  height: 40px;
+  @include buttons;
   background-color: $basic-green;
-  font-size: 16px;
-  line-height: 20px;
-  color: $basic-white;
-  text-align: center;
 }
 .button__small {
   font-size: 14px;
   line-height: 18px;
+}
+
+.button__form {
+  border-style: none;
+  text-transform: uppercase;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: center;
+
+  @include oswald-regular;
+}
+
+.button__product {
+  @include buttons;
+  background-color: $basic-grey;
+  color: $special_dark-grey;
 }

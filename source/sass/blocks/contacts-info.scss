@@ -2,11 +2,15 @@
   background: $basic-grey;
 }
 .contacts-info__title {
-  color: $special_dark;
-  width: 139px;
-  display: inline-block;
-  font-size: 16px;
-  text-transform: uppercase;
+  @include contacts-info;
+
+  line-height: 18px;
+}
+
+.contacts-info__main {
+  @include contacts-info;
+
+  line-height: 20px;
 }
 
 .contacts-info__text {

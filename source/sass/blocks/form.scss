@@ -27,19 +27,10 @@
 }
 
 .form__legend {
-  line-height: 16px;
+  font-size: 24px;
+  line-height: 26px;
 }
 
-.button__form {
-  border-style: none;
-  text-transform: uppercase;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  align-content: center;
-
-  @include oswald-regular;
-}
 .form__list {
   @include reset-list;
 }
@@ -50,4 +41,9 @@
 .form__item input::placeholder {
   color: $special_dark-grey;
   opacity: 1;
+}
+
+.form__mandatory-fields {
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
 }
