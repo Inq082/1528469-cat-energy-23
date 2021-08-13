@@ -1,6 +1,8 @@
 .button {
   @include buttons;
   background-color: $basic-green;
+  color: $basic-white;
+
 }
 
 .button__small {

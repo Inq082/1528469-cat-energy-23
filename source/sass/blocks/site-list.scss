@@ -1,21 +1,29 @@
-.site-list {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 65px;
-  width: 280px;
-  height: 264px;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  background-color: $basic-white;
-}
-
 .site-list__item {
-  padding: 22px 0;
-  text-transform: uppercase;
+  padding: 21px 20px;
+  text-align: center;
+  border-bottom: 1px solid $special_lite-grey;
 }
 
-.site-list__item a {
+.site-list__item-link {
   color: $basic-dark;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
 }

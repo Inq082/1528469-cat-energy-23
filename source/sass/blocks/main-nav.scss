@@ -5,57 +5,101 @@
   text-align: center;
 }
 
-#main-nav__toggle {
-  opacity: 0;
+.main-nav__logo {
+  padding: 12px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $special_lite-grey;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--active {
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
-.main-nav__btn {
-  display: block;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  left: 300px;
+.main-nav__logo-link {
+  min-width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__logo-text {
+  padding-top: 3px;
+}
+
+.main-nav__toggle {
   width: 24px;
-  height: 16px;
+  height: 24px;
+  border: none;
+  background-color: $basic-white;
+  position: relative;
   cursor: pointer;
   z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    background-image: url("../../img/open.svg");
+    top: 5px;
+    left: 0;
+  }
 }
 
-.main-nav__btn > span,
-.main-nav__btn > span::before,
-.main-nav__btn > span::after {
-  display: block;
+.main-nav__list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__toggle:hover::before {
+  opacity: 0.8;
+}
+
+.main-nav__toggle:active::before {
+  opacity: 0.6;
+}
+
+.main-nav--opend .main-nav__toggle::before {
+  content: "";
   position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/close.svg");
+  top: 2px;
+  left: 2px;
 }
 
-.main-nav__btn > span::before {
-  content: "";
-  top: -8px;
+.main-nav--opend .main-nav__toggle:hover::before {
+  opacity: 0.8;
 }
 
-.main-nav__btn > span::after {
-  content: "";
-  top: 8px;
+.main-nav--opend .main-nav__toggle:active::before {
+  opacity: 0.6;
 }
 
-#main-nav__toggle:checked ~ .main-nav__btn > span {
-  transform: rotate(45deg);
+.main-nav--opend .main-nav__list {
+    display: block;
 }
 
-#main-nav__toggle:checked ~ .main-nav__btn > span::before {
-  top: 0;
-  transform: rotate(0);
+.main-nav--nojs .main-nav__toggle {
+    display: none;
 }
 
-#main-nav__toggle:checked ~ .main-nav__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
+.main-nav--nojs .main-nav__list {
+    display: block;
 }
 
-#main-nav__toggle:checked ~ .site-list {
-  visibility: visible;
-  left: 0;
-}
