@@ -1,0 +1,53 @@
+// Fonts
+
+@mixin oswald-regular {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin oswald-medium {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin arial ($font-size, $line-height) {
+  font-family: "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Styles
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin contacts-info {
+  color: $special_dark;
+  width: 139px;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@mixin products {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

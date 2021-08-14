@@ -1,0 +1,15 @@
+.goods__link {
+  color: $special_dark-grey-2;
+}
+
+.goods__info {
+  color: $special_dark-grey;
+
+  @include arial (14px, 14px);
+}
+
+.goods__promo-text {
+  @include arial (16px, 20px);
+  color: $basic-white;
+  text-align: center;
+}

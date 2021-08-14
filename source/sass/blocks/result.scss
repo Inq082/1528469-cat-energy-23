@@ -1,0 +1,14 @@
+.result__wrapper p {
+  padding: 0;
+  margin: 0;
+}
+
+.result__quantity {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.result__value {
+  @include arial(12px, 12px);
+  color: $special_dark-grey;
+}

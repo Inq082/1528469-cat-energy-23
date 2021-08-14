@@ -1,0 +1,22 @@
+.contacts-info {
+  background: $basic-grey;
+}
+
+.contacts-info__title {
+  @include contacts-info;
+
+  line-height: 18px;
+}
+
+.contacts-info__main {
+  @include contacts-info;
+
+  line-height: 20px;
+}
+
+.contacts-info__text {
+  @include arial(14px, 20px);
+  color: $special_dark-grey;
+  width: 140px;
+  display: inline-block;
+}

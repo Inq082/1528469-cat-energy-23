@@ -1,0 +1,21 @@
+.additional-goods__promo {
+  background-image: url("../img/gift-photo-mobile.png");
+  width: 280px;
+  height: 289px;
+}
+
+.additional-goods__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.additional-goods__list {
+  @include reset-list;
+}
+
+.additional-goods__description,
+.additional-goods__value {
+  @include arial (14px, 14px);
+  color: $special_dark-grey;
+}

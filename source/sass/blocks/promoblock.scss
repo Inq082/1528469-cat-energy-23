@@ -1,0 +1,17 @@
+.promoblock {
+  color: $basic-white;
+  text-align: center;
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background.png");
+  background-repeat: no-repeat;
+}
+
+.promoblock__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promoblock__slogan {
+  line-height: 14px;
+  text-transform: uppercase;
+}

@@ -3,56 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Подбор программы</title>
-  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-body">
+<body class="page__body">
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img src="img/logo-mobile.png" width="33" height="37" alt="Логотип компании Кэт Энерджи">
-  </a>
-  <a class="page-header__logo-text">
-    <img src="img/logo-text.png" width="101" height="18" alt="Логотип компании Кэт Энерджи">
-  </a>
-  <nav class="main-nav">
-    <button class="page-header__toggle button" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+  <nav class="main-nav main-nav--nojs">
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="index.html"> Главная </a></li>
-        <li class="main-nav__item"><a href="catalog.html"> Каталог продукции </a></li>
-        <li class="main-nav__item"><a> Подбор программы </a></li>
+      <div class="main-nav__logo main-nav__logo--active">
+        <a class="main-nav__logo-link">
+          <img src="img/logo-mobile.png" width="33" height="37" alt="Логотип компании Кэт Энерджи">
+        </a>
+        <a class="page-header__logo-text">
+          <img src="img/logo-text.png" width="101" height="18" alt="Логотип компании Кэт Энерджи">
+        </a>
+        <button class="main-nav__toggle" aria-label="Открыть меню"></button>
+      </div>
+      <ul class="main-nav__list site-list site-list--main">
+        <li class="site-list__item"><a class="site-list__item-link" href="index.html"> Главная </a></li>
+        <li class="site-list__item"><a class="site-list__item-link" href="catalog.html"> Каталог продукции </a></li>
+        <li class="site-list__item"><a class="site-list__item-link site-list__item-link--active" href="#"> Подбор программы </a></li>
       </ul>
     </div>
   </nav>
 </header>
-<main class="page-main">
+<main class="page-form">
   <section class="form-section">
-    <header class="form-section__header wrapper">
-      <h1 class="form-section__main-title main-title">Подбор программы</h1>
+    <div class="page-wrapper">
+      <h1 class="form-section__main-title">Подбор программы</h1>
       <p class="form-section__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    </header>
     <form class="form" action="#" method="post">
-      <fieldset class="form__personal-info">
+      <fieldset class="form__personal-info form__fieldset">
         <legend class="visually-hidden">личные данные</legend>
-        <ul class="form__list wrapper">
+        <ul class="form__list">
           <li class="form__item">
             <label class="form__label" for="cat-name">Имя:<sup>&lowast;</sup></label>
-            <input class="form__input" type="text" name="name" id="cat-name" value="барсик" required>
+            <input class="form__input" type="text" name="name" id="cat-name" value="барсик" style="float: right;" size="24" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="cat-weight">Вес (кг):<sup>&lowast;</sup></label>
-            <input class="form__input" type="number" name="weight" id="cat-weight" value="7" required>
+            <input class="form__input" type="number" name="weight" id="cat-weight" value="7" style="float: right;" size="20" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="cat-age">Возраст (лет):</label>
-            <input class="form__input" type="number" name="age" id="cat-age" value="7">
+            <input class="form__input" type="number" name="age" id="cat-age" value="7" style="float: right;" size="8">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__type">
+      <fieldset class="form__type form__fieldset">
         <legend class="visually-hidden">тип программы</legend>
-        <ul class="form__list wrapper">
+        <ul class="form__list">
           <li class="form__item">
             <input class="form__input-radio visually-hidden" type="radio" name="type" value="weight-loss" id="type-weight-loss" checked>
             <label class="form__label-radio form__label" for="type-weight-loss">Похудение</label>
@@ -67,12 +67,12 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__owner-contacts">
+      <fieldset class="form__owner-contacts form__fieldset">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <ul class="form__list wrapper">
           <li class="form__item">
             <label class="form__label-email form__label" for="owner-email">e-mail:<sup>&lowast;</sup></label>
-            <input class="form__input--icon form__input" type="email" name="email" id="owner-email" value="kuklachev@gmail.com" required>
+            <input class="form__input--icon form__input" type="email" name="email" id="owner-email" value="kuklachev@gmail.com" size="23" required>
             <img src="img/icon-email.svg" alt="Email" width="20" height="15">
           </li>
           <li class="form__item">
@@ -82,12 +82,12 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__comment">
+      <fieldset class="form__comment form__fieldset">
         <legend class="form__legend">Комментарий</legend>
         <label class="visually-hidden" for="about-cat">текст комментария</label>
         <textarea class="form__input-comment form__input wrapper" name="comment" id="about-cat" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__extra">
+      <fieldset class="form__extra form__fieldset">
         <legend class="form__legend">Дополнительно</legend>
         <ul class="form__list wrapper">
           <li class="form__item">
@@ -109,44 +109,55 @@
         </ul>
       </fieldset>
       <div class="form__submit-wrapper wrapper">
-        <button class="form__button button" type="submit">Отправить заявку</button>
+        <button class="button__form button" type="submit">Отправить заявку</button>
         <p class="form__mandatory-fields"><sup>&lowast;</sup>&nbsp;&mdash;&nbsp;Обязательные поля</p>
       </div>
     </form>
+    </div>
   </section>
-  <section class="contacts-info page-main__contacts-info">
-    <h2 class="visually-hidden">Контактные данные</h2>
-    <b class="contacts-info__text">приглашаем к сотрудничеству дилеров!</b>
-    <b class="contacts-info__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</b>
-  </section>
-  <div class="map page-main__map">
-    <img class="map__image" src="img/map.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-  </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a class="logo page-footer__logo">
-      <img src="img/logo-text.png" width="128" height="24" alt="cat energy">
-    </a>
-    <div class="social page-footer__social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#">Мы в контакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Мы в instagram</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в facebook</a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright page-footer__copyright">
-      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-        <img src="img/logo-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
-      </a>
-    </div>
+    <section class="contacts-info page-footer__contacts-info">
+      <div class="page-wrapper">
+        <h2 class="visually-hidden">Контактные данные</h2>
+        <p class="contacts-info__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts-info__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+    </section>
+    <section class="location page-footer__location">
+      <h2 class="visually-hidden">Карта</h2>
+      <img class="location__map" src="img/map.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    </section>
+    <section class="page-footer__main">
+      <div class="page-wrapper">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="logo page-footer__logo">
+          <img src="img/logo-text.png" width="128" height="24" alt="cat energy">
+        </a>
+        <div class="social page-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">Мы в контакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Мы в instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в facebook</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright page-footer__copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">HTML Academy</span>
+            <img src="img/logo-academy.svg" alt="Логотип HTML Academy" width="27" height="34">
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 </footer>
+<script src="js/menu.js" type="text/javascript"></script>
 </body>
 </html>
