@@ -1,8 +1,22 @@
-.main-nav {
-  @include oswald-medium;
-  line-height: 20px;
-  font-size: 20px;
-  text-align: center;
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 53px 110px 29px;
+    position: relative;
+    margin-bottom: -141px;
+    z-index: 2;
+
+    &--inner {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .main-nav__logo {
@@ -26,16 +40,34 @@
       opacity: 1;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+    align-items: center;
+  }
 }
 
 .main-nav__logo-link {
   min-width: 190px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
+  }
 }
 
 .main-nav__logo-text {
   padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
@@ -45,7 +77,6 @@
   background-color: $basic-white;
   position: relative;
   cursor: pointer;
-  z-index: 1;
 
   &::before {
     content: "";
@@ -54,15 +85,26 @@
     height: 18px;
     background-image: url("../../img/open.svg");
     top: 5px;
-    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .main-nav__list {
-  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
 }
 
 .main-nav__toggle:hover::before {
@@ -91,14 +133,20 @@
   opacity: 0.6;
 }
 
-.main-nav--opend .main-nav__list {
-  display: block;
-}
+@media (max-width: $mobile-width-only) {
+  .main-nav__list {
+    display: none;
+  }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
+  .main-nav--opend .main-nav__list {
+    display: block;
+  }
 
-.main-nav--nojs .main-nav__list {
-  display: block;
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
 }

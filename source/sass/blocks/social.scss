@@ -1,3 +1,43 @@
 .social__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: center;
+}
+.social__link--instagram:hover path,
+.social__link--vk:hover path {
+  fill: $basic-green;
+}
+
+.social__link--facebook:hover path {
+  stroke: $basic-green;
+}
+
+.social__link:active path {
+  opacity: 30%;
+}
+
+.social__link--vk svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__link--instagram svg {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link--facebook svg {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }

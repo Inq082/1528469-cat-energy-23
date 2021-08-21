@@ -1,14 +1,136 @@
-.result__wrapper p {
-  padding: 0;
-  margin: 0;
+.result {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 279px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3 / 4;
+  }
+}
+.result__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 124px;
+  min-height: 64px;
+  margin-bottom: 13px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 124px;
+    min-height: 56px;
+    top: -15px;
+    left: 0;
+    border: 1px solid $special_grey;
+    border-radius: 5%;
+  }
+
+  &:first-child {
+    margin-right: 31px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 77px;
+
+    &::before {
+      min-width: 162px;
+      min-height: 71px;
+    }
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 162px;
+    min-height: 72px;
+    margin-bottom: 46px;
+  }
 }
 
 .result__quantity {
   font-size: 24px;
   line-height: 24px;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
+  }
 }
 
 .result__value {
   @include arial(12px, 12px);
   color: $special_dark-grey;
+  margin: 0;
+  background-color: $main-gray_back;
+  z-index: 2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include arial(14px, 14px);
+    background-color: $basic-white;
+    padding: 0 8px;
+
+    & br {
+      display: none;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    @include arial(14px, 14px);
+    background-color: $basic-grey;
+    padding: 0 8px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.result__spending {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    flex-basis: auto;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.result__cost {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 63px;
+  }
 }
