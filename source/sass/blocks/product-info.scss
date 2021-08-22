@@ -1,16 +1,231 @@
+.product-info {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.product-info__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.product-info__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.product-info__item {
+  padding: 21px 20px 18px 19px;
+  background-color: $basic-grey;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $basic-green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 24px;
+    left: 22px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: auto;
+      right: 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 78px 279px 55px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 51px 57px 52px;
+  }
+
+  &--slim {
+    &::after {
+      content: "";
+      position: absolute;
+      background-size: cover;
+      background-image: url("../img/cat-slim.svg");
+      width: 36px;
+      height: 50px;
+      top: 21px;
+      left: 29px;
+
+      @media (min-width: $tablet-width) {
+        background-size: cover;
+        width: 140px;
+        height: 193px;
+        top: 81px;
+        left: auto;
+        right: 92px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        top: 41px;
+        left: 67px;
+        right: auto;
+      }
+    }
+  }
+
+  &--pro {
+    &::after {
+      content: "";
+      position: absolute;
+      background-size: cover;
+      background-image: url("../img/cat-pro.svg");
+      width: 67px;
+      height: 28px;
+      top: 35px;
+      left: 13px;
+
+      @media (min-width: $tablet-width) {
+        background-size: cover;
+        width: 268px;
+        height: 112px;
+        top: 135px;
+        left: auto;
+        right: 28px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        top: 67px;
+        left: 33px;
+        right: auto;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-right: 314px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 61px;
+    }
+  }
+}
+
 .product-info__description {
+  margin: 0;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
   font-family: "Arial", sans-serif;
-  width: 227px;
-  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .product-info__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 71px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .product-info__link {
+  padding-right: 56px;
   color: $basic-dark;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 65px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 67px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    background-image: url("../../img/icon-arrow.svg");
+    top: 6px;
+    right: 8px;
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../../img/icon-arrow2.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 }

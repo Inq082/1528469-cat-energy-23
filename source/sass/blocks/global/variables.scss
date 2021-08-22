@@ -4,6 +4,7 @@ $basic-green: #68b738;
 $basic-grey: #f2f2f2;
 $special_grey: #cdcdcd;
 $special_grey-2: #666666;
+$special_grey-3: #c4c4c4;
 $special_lite-grey: #e6e6e6;
 $special_dark-grey: #444444;
 $special_dark-grey-2: #222222;
@@ -13,13 +14,14 @@ $basic-dark: #000000;
 $main-light: #ebebeb;
 $main-gray_back: #eaeaea;
 $basic-lighten: #d3d3d3;
-$main-grey_lighten: #cdcdcd;
+$main-grey_lighten: #dcdcdc;
 $basic-light-accent: #d9d9d9;
 $main-orange: #f06351;
 $main-orange-2: #fdc305;
+$color-transparent: rgba(255, 255, 255, 0);
 
-h3,
-h2,
-h1 {
-  font-weight: 400;
-}
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;

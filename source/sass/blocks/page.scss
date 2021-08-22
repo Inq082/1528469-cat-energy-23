@@ -1,3 +1,20 @@
 .page {
   height: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  color: $basic-dark;
+  background-color: $basic-white;
 }

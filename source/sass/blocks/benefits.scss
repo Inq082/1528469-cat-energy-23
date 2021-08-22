@@ -1,19 +1,182 @@
-.benefits__wrapper {
-  width: 279px;
-  margin-left: 20px;
-}
+.benefits {
+  margin-bottom: 42px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 46px;
+    border-bottom: 1px solid $special_dark-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
 .benefits__title {
+  margin: 0;
+  margin-bottom: 38px;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .benefits__description {
   font-family: "Arial", sans-serif;
   width: 176px;
   color: $special_dark-grey;
+  margin: 0;
+  padding: 3px 0 4px 80px;
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 75px 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .benefits__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.benefits__item {
+  min-height: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
+
+  &--leaf {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 32px;
+      background-image: url("../../img/icon_leaf.svg");
+      top: 14px;
+      left: 15px;
+
+      @media (min-width: $tablet-width) {
+        top: 64px;
+        left: 24px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/text-1.png");
+      background-repeat: no-repeat;
+      background-position: 125px 40px;
+    }
+  }
+
+  &--tub {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 29px;
+      height: 31px;
+      background-image: url("../../img/icon_tub.svg");
+      top: 13px;
+      left: 15px;
+
+      @media (min-width: $tablet-width) {
+        top: 64px;
+        left: 25px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/text-2.png");
+      background-repeat: no-repeat;
+      background-position: 122px 38px;
+    }
+  }
+
+  &--eat {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 30px;
+      background-image: url("../../img/icon_eat.svg");
+      top: 15px;
+      left: 18px;
+
+      @media (min-width: $tablet-width) {
+        top: 65px;
+        left: 28px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/text-3.png");
+      background-repeat: no-repeat;
+      background-position: 124px 38px;
+    }
+  }
+
+  &--alarm {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 33px;
+      background-image: url("../../img/icon_alarm.svg");
+      top: 13px;
+      left: 14px;
+
+      @media (min-width: $tablet-width) {
+        top: 63px;
+        left: 24px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/text-4.png");
+      background-repeat: no-repeat;
+      background-position: 124px 38px;
+    }
+  }
 }

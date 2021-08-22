@@ -1,0 +1,117 @@
+.slider-controls {
+  width: 71.25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 81.25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 82.25%;
+    margin: 0;
+    margin-left: 90px;
+    margin-top: -60px;
+  }
+}
+
+.slider-controls__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: -6px;
+      background-image: linear-gradient(90deg, $special_grey-2 50%, $color-transparent 50%);
+      background-position: 0 0;
+      background-repeat: repeat-x;
+      background-size: 2px 1px;
+
+      @media (min-width: $desktop-width) {
+        bottom: -1px;
+      }
+    }
+
+    &:hover::after {
+      background-color: $special_grey-2;
+    }
+
+    &:active::after {
+      display: none;
+    }
+  }
+}
+
+.slider-controls__range {
+  flex-basis: 40.8%;
+  height: 14px;
+  background-color: $basic-white;
+  border-radius: 5px;
+  border-color: $special_grey;
+  border-width: 1px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    flex-basis: 73.7%;
+    height: 6px;
+    background-color: $main-grey_lighten;
+    padding: 0;
+  }
+}
+
+.slider-controls__pointer {
+  width: 50%;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 5px;
+  margin-top: 4px;
+  margin-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 45%;
+    top: -15px;
+    width: auto;
+    height: auto;
+    background-color: $basic-white;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.outer {
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    border: 1px solid $main-grey_lighten;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &:active {
+      border-color: $basic-green;
+    }
+  }
+}
+
+.inner {
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+}
