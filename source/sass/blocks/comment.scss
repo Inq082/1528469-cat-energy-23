@@ -1,0 +1,21 @@
+.comment__textarea {
+  height: 150px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 14px;
+  resize: none;
+  margin-top: 34px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    margin-top: 56px;
+    margin-bottom: 60px;
+    padding: 5px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 6px 20px;
+    margin-bottom: 62px;
+  }
+}

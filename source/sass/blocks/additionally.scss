@@ -1,0 +1,59 @@
+.additionally__list {
+  @include reset-list;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 565px;
+    margin-top: 35px;
+    margin-bottom: 22px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 30px;
+    margin-top: 32px;
+    padding-right: 20px;
+  }
+}
+
+.additionally__item {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 220px;
+    padding-bottom: 30px;
+  }
+}
+
+.additionally__label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_grey;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.additionally__input:checked + .additionally__label::before {
+  background-image: url("../img/icon-check.svg");
+  background-size: 18px 14px;
+}
+
+.additionally__label:hover::before {
+  border: 1px solid $basic-form;
+}
+
+.additionally__input:disabled + .additionally__label {
+  opacity: 30%;
+}

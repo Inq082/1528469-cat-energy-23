@@ -8,14 +8,194 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: $basic-white;
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0;
+  margin-left: -20px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    padding-left: 36px;
+    margin-bottom: 80px;
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
+    margin-left: -36px;
+    padding-left: 36px;
+  }
 }
 
 .additional-goods__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 10px;
+  }
 }
 
 .additional-goods__description,
 .additional-goods__value {
   @include arial (14px, 14px);
   color: $special_dark-grey;
+}
+
+.additional-goods__line {
+  position: relative;
+}
+
+.additional-goods__line::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $basic-green;
+  z-index: -1;
+  top: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+  }
+}
+
+.additional-goods__item:last-child {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    margin-left: 80px;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}
+
+.additional-goods__item {
+  display: flex;
+  row-gap: 14px;
+  flex-wrap: wrap;
+  border-top: 1px solid $special_grey;
+  padding-top: 13px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 24px 38px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    align-items: baseline;
+  }
+}
+
+.additional-goods__item:nth-child(4) {
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $special_grey;
+  }
+}
+
+.additional-goods__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    align-items: center;
+  }
+}
+
+.additional-goods__item:nth-child(5) {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.additional-goods__promo {
+  background-image: url("../img/cat-gift-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 289px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+  background-color: rgba(104, 183, 56, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-gift-mobile@2x.png");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-gift-tablet.png");
+    height: 200px;
+    margin-top: 44px;
+    text-align: left;
+    margin-bottom: 54px;
+    position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-gift-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cat-gift-desktop.png");
+    width: 245px;
+    height: 289px;
+    margin-top: 0;
+    display: flex;
+    text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-gift-desktop@2x.png");
+    }
+  }
+}
+
+.additional-goods__promo::before {
+  content: "";
+  background-image: url("../img/icon_gift.svg");
+  background-size: cover;
+  width: 78px;
+  height: 80px;
+  display: inline-block;
+  margin-top: 58px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin-bottom: 0;
+  }
+}
+
+.additional-goods__link {
+  cursor: pointer;
 }

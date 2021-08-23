@@ -1,30 +1,13 @@
 .button {
-  @include buttons;
+  display: block;
+  height: 30px;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
   background-color: $basic-green;
   color: $basic-white;
-}
-
-.button__small {
-  margin: auto;
-  margin-top: 3px;
-  min-height: 40px;
-  font-size: 14px;
-  line-height: 18px;
-
-  @media (min-width: $tablet-width) {
-    order: 1;
-    width: 244px;
-    min-height: 54px;
-    margin-left: 82px;
-    z-index: 1;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 80px;
-    margin-bottom: 133px;
-  }
 }
 
 .button__form {
@@ -42,5 +25,4 @@
   background-color: $basic-grey;
   color: $special_dark-grey;
 
-  @include buttons;
 }

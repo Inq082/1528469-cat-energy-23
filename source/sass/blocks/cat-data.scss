@@ -1,0 +1,18 @@
+.cat-data {
+  color: $special_dark-grey;
+}
+
+.cat-data__list {
+  @include reset-list;
+  display: grid;
+  row-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 22px;
+  }
+}
+
+.cat-data__item input::placeholder {
+  color: $special_dark-grey;
+  opacity: 1;
+}

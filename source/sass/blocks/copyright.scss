@@ -5,7 +5,21 @@
   color: $basic-dark;
 }
 
-.copyright__link img {
-  width: 27px;
-  height: 34px;
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 22px;
+  }
+}
+
+.copyright__link:hover path {
+  fill: $basic-green;
 }

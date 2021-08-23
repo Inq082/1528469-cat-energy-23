@@ -28,7 +28,6 @@
 
 @mixin contacts-info {
   color: $special_dark;
-  width: 139px;
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
@@ -36,18 +35,7 @@
 
 @mixin products {
   font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-@mixin buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 280px;
-  height: 40px;
-  font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }

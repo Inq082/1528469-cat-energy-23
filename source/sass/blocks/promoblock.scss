@@ -129,3 +129,35 @@
       padding-top: 140px;
   }
 }
+
+.promoblock__button {
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  background-color: $basic-green;
+  color: $basic-white;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $basic-green2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    height: 37px;
+    padding-top: 17px;
+    margin-left: 82px;
+    z-index: 3;
+  }
+}

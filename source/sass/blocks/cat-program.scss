@@ -1,0 +1,60 @@
+.cat-program {
+  color: $special-dark;
+  border-top: 1px solid $basic-light-accent;
+  border-bottom: 1px solid $basic-light-accent;
+  margin: 0 -20px 28px;
+  padding: 20px 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 30px;
+    margin: 0;
+    border: 1px solid $basic-light-accent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 26px 25px 26px;
+  }
+}
+
+.cat-program__list {
+  @include reset-list;
+  display: grid;
+  row-gap: 14px;
+
+  @media (min-width: $desktop-width) {
+    row-gap: 11px;
+  }
+}
+
+.cat-program__label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_grey;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.cat-program__label:hover::before {
+  border: 1px solid $special_dark-grey;
+}
+
+.cat-program__input:checked + .cat-program__label::before {
+  background-image: url("../img/icon-radiobutton.svg");
+  background-size: 14px 14px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 18px 18px;
+  }
+}
+
+.cat-program__input:disabled + .cat-program__label {
+  opacity: 30%;
+}

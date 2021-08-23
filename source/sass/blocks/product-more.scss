@@ -1,0 +1,53 @@
+.product__more-link {
+  background-color: $basic-grey;
+  color: $special_dark-grey;
+  width: 100%;
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+
+  &:hover {
+    background-color: $main-light;
+    color: $special_dark-grey;
+  }
+
+  &:focus {
+    background-color: $main-light;
+    color: $special_dark-grey;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.product-more {
+  border-bottom: 1px solid $main-light;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      align-self: center;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    border: 2px solid $basic-grey;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 0;
+  }
+}
