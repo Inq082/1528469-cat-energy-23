@@ -1,8 +1,22 @@
-.form-section__intro {
-  text-transform: uppercase;
+.form-section {
+  padding-top: 37px;
 }
 
-.form-section__main-title {
-  font-size: 36px;
-  line-height: 36px;
+.form-section__intro {
+  text-transform: uppercase;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 30px;
+    padding-top: 54px;
+    margin: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 }
+

@@ -1,0 +1,7 @@
+.contacts-color {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}

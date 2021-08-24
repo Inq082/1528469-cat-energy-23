@@ -1,0 +1,78 @@
+.contact-owner {
+  color: $special_dark-grey;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.contact-owner__input {
+  padding-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
+}
+
+.contact-owner__list {
+  @include reset-list;
+  display: grid;
+  row-gap: 14px;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 52px;
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 76px;
+    margin-top: 52px;
+  }
+}
+
+.contact-owner__item {
+  @media (min-width: $desktop-width) {
+    flex-basis: 568px;
+  }
+}
+
+.contact-owner__item input::placeholder {
+  color: $special_dark-grey;
+  opacity: 1;
+}
+
+.contact-owner__icon {
+  position: absolute;
+  right: 16px;
+}
+
+.form__input:focus + .contact-owner__icon--mail path {
+  stroke: $basic-green;
+}
+
+.form__input:focus + .contact-owner__icon--mail line {
+  stroke: $basic-green;
+}
+
+.form__input:focus + .contact-owner__icon--phone path {
+  fill: $basic-green;
+}
+
+.form__input--error + .contact-owner__icon--phone path {
+  fill: $basic-error;
+}
+
+.form__input--error + .contact-owner__icon--mail path {
+  stroke: $basic-error;
+}
+
+.form__input--error + .contact-owner__icon--mail line {
+  stroke: $basic-error;
+}
