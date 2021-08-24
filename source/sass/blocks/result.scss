@@ -15,6 +15,7 @@
     grid-row: 3 / 4;
   }
 }
+
 .result__item {
   display: flex;
   flex-direction: column;
@@ -90,6 +91,7 @@
       display: none;
     }
   }
+
   @media (min-width: $desktop-width) {
     @include arial(14px, 14px);
     background-color: $basic-grey;
