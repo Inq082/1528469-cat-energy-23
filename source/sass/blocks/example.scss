@@ -32,7 +32,6 @@
 }
 
 .example .container {
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 436px 696px;
@@ -73,7 +72,6 @@
 }
 
 .example-slider {
-
   @media (min-width: $desktop-width) {
     min-width: 690px;
     grid-row: 1 / 4;

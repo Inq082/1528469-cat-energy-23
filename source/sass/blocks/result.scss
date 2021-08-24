@@ -75,6 +75,7 @@
 .result__value {
   @include arial(12px, 12px);
   color: $special_dark-grey;
+  width: 87px;
   margin: 0;
   background-color: $main-gray_back;
   z-index: 2;
