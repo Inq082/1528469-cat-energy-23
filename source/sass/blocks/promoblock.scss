@@ -121,12 +121,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-      margin-top: -83px;
+    margin-top: -83px;
   }
+
   @media (min-width: $desktop-width) {
-      margin-top: 0;
-      margin-left: -46px;
-      padding-top: 140px;
+    margin-top: 0;
+    margin-left: -46px;
+    padding-top: 140px;
   }
 }
 

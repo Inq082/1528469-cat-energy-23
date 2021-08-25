@@ -15,6 +15,7 @@
     grid-row: 3 / 4;
   }
 }
+
 .result__item {
   display: flex;
   flex-direction: column;
@@ -75,6 +76,7 @@
 .result__value {
   @include arial(12px, 12px);
   color: $special_dark-grey;
+  width: 87px;
   margin: 0;
   background-color: $main-gray_back;
   z-index: 2;
@@ -89,6 +91,7 @@
       display: none;
     }
   }
+
   @media (min-width: $desktop-width) {
     @include arial(14px, 14px);
     background-color: $basic-grey;
