@@ -33,8 +33,7 @@
   </nav>
 </header>
 <main class="page-main">
-  <section class="promoblock">
-    <div class="container">
+  <section class="promoblock container">
       <div class="promoblock__wrapper">
         <h1 class="promoblock__title">Функциональное питание для котов</h1>
         <p class="promoblock__slogan">Занялся собой? Займись котом!</p>
@@ -47,7 +46,6 @@
         </div>
         <a class="promoblock__button" href="form.html">Подобрать программу</a>
       </div>
-    </div>
   </section>
   <section class="product-info">
     <div class="container">
@@ -101,26 +99,31 @@
         без изнуряющих тренировок! При этом он не менял своих
         привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <dl class="result">
-        <div class="result__item">
-          <dt class="result__quantity">5 кг</dt>
-          <dd class="result__value">снижение<br> веса</dd>
-        </div>
-        <div class="result__item">
-          <dt class="result__quantity">60 дней</dt>
-          <dd class="result__value">затрачено<br> времени</dd>
-        </div>
-        <p class="result__spending">Затраты на питание: <span class="result__cost"> 15 000 руб.</span></p>
-      </dl>
+      <div class="result">
+        <dl class="result__list">
+          <div class="result__item">
+            <dt class="result__quantity">5 кг</dt>
+            <dd class="result__value">снижение<br> веса</dd>
+          </div>
+          <div class="result__item">
+            <dt class="result__quantity">60 дней</dt>
+            <dd class="result__value">затрачено<br> времени</dd>
+          </div>
+          <div class="result__item">
+            <dt class="result__quantity-cost">15 000 руб.</dt>
+            <dd class="result__value-cost">Затраты на питание:</dd>
+          </div>
+        </dl>
+      </div>
       <div class="example-slider">
         <picture>
-          <source class="example-slider__image" media="(min-width: 1440px)" srcset="img/image_cat_desktop.png, img/image_cat_desktop@2x.png 2x" width="708" height="620" alt="Кот было">
-          <source class="example-slider__image" media="(min-width: 768px)" srcset="img/image_cat_tablet.png, img/image_cat_tablet@2x.png 2x" width="708" height="620" alt="Кот было">
+          <source class="example-slider__image" media="(min-width: 1440px)" srcset="img/image_cat_desktop.png, img/image_cat_desktop@2x.png 2x">
+          <source class="example-slider__image" media="(min-width: 768px)" srcset="img/image_cat_tablet.png, img/image_cat_tablet@2x.png 2x">
           <img class="example-slider__image" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Кот было">
         </picture>
         <picture class="visually-hidden">
-          <source media="(min-width: 768px)" srcset="img/img/image_cat_desktop.png, img/image_cat_desktop@2x.png 2x" width="708" height="620" alt="Кот стало">
-          <source class="example-slider__image" media="(min-width: 768px)" srcset="img/image_cat_tablet.png, img/image_cat_tablet@2x.png 2x" width="708" height="620" alt="Кот было">
+          <source media="(min-width: 768px)" srcset="img/img/image_cat_desktop.png, img/image_cat_desktop@2x.png 2x">
+          <source class="example-slider__image" media="(min-width: 768px)" srcset="img/image_cat_tablet.png, img/image_cat_tablet@2x.png 2x">
           <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Кот стало">
         </picture>
         <div class="example-slider__controls slider-controls">
@@ -196,6 +199,6 @@
     </section>
   </div>
 </footer>
-<script src="js/menu.js" type="text/javascript"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
