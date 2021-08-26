@@ -5,7 +5,7 @@
   background-image: url("../../img/cat-background.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 302px;
+  background-size: 320px auto;
   position: relative;
 
   @media (min-resolution: 2dppx) {
@@ -15,7 +15,6 @@
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
     height: 302px;
     background: rgba(104, 183, 56, 0.85);
     left: 0;
