@@ -116,6 +116,7 @@
 .main-nav--opend .main-nav__toggle:active::before {
   opacity: 0.6;
 }
+
 @media (max-width: $tablet-width) {
   .main-nav__list {
     display: none;
@@ -135,7 +136,6 @@
 }
 
 .main-nav__logos {
-
   &:hover {
     opacity: 0.8;
   }
