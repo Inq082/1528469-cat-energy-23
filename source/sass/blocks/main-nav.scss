@@ -26,21 +26,6 @@
   align-items: center;
   border-bottom: 1px solid $special_lite-grey;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  &--active {
-    &:hover,
-    &:active {
-      opacity: 1;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding: 0;
     border-bottom: none;
@@ -132,7 +117,7 @@
   opacity: 0.6;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $tablet-width) {
   .main-nav__list {
     display: none;
   }
@@ -147,5 +132,15 @@
 
   .main-nav--nojs .main-nav__list {
     display: block;
+  }
+}
+
+.main-nav__logos {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
