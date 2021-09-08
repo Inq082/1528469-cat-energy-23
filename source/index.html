@@ -4,8 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Функциональное питание для котов: Кэт Энерджи</title>
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/152.svg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -39,6 +43,11 @@
         <p class="promoblock__slogan">Занялся собой? Займись котом!</p>
         <div class="promoblock__photo-container">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
             <img class="promoblock__photo" src="img/index-can-mobile.png" alt="Изображение функционального питания для котов">
@@ -199,6 +208,6 @@
     </section>
   </div>
 </footer>
-<script src="js/menu.js"></script>
+<script src="js/menu.min.js"></script>
 </body>
 </html>
