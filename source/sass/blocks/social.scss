@@ -5,20 +5,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 30px;
+  column-gap: 34px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 25px;
+  }
 }
 
-.social__link--instagram:hover path,
-.social__link--vk:hover path {
+.social__link--instagram:hover svg,
+.social__link--vk:hover svg {
   fill: $basic-green;
 }
 
-.social__link--facebook:hover path {
+.social__link--facebook:hover svg {
   stroke: $basic-green;
 }
 
-.social__link:active path {
+.social__link:active svg {
   opacity: 30%;
 }
 
@@ -32,7 +36,7 @@
 .social__link--instagram svg {
   @media (min-width: $tablet-width) {
     width: 23px;
-    height: 23px;
+    height: 29px;
   }
 }
 
@@ -40,5 +44,6 @@
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 33px;
+    fill: none;
   }
 }

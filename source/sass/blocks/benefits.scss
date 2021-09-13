@@ -1,5 +1,6 @@
 .benefits {
-  margin-bottom: 42px;
+  padding-bottom: 15px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -23,23 +24,31 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
   }
 }
 
 .benefits__description {
   font-family: "Arial", sans-serif;
-  width: 176px;
   color: $special_dark-grey;
   margin: 0;
-  padding: 3px 0 4px 80px;
+  padding-left: 80px;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 151px 75px 57px 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    padding-top: 153px;
   }
 }
 
@@ -56,8 +65,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 80px;
+    grid-template-columns: 236px 239px 238px 250px;
+    grid-column-gap: 87px;
   }
 }
 

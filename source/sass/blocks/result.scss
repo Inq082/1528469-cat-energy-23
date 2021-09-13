@@ -6,10 +6,6 @@
     grid-column: 1;
     padding: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 15px;
-  }
 }
 
 .result__list {
@@ -29,6 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 100px;
   }
 }
 
@@ -52,8 +49,9 @@
   &:last-child {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 20px;
-    margin-left: 12px;
+    margin-top: 13px;
+    margin-left: 14px;
+    padding-top: 11px;
     flex-grow: 0.8;
     border: none;
   }
@@ -61,7 +59,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
-    min-height: 65px;
+    min-height: 70px;
     margin-top: 0;
 
     &:first-child {
@@ -70,10 +68,11 @@
 
     &:last-child {
       margin-right: 0;
-      margin-top: 10px;
+      margin-top: 1px;
       flex-direction: column-reverse;
       align-items: flex-end;
       min-height: 30px;
+      padding-top: 3px;
     }
   }
 
@@ -111,7 +110,7 @@
 
 .result__value {
   font-family: "Arial", sans-serif;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   color: $special_dark-grey;
@@ -121,17 +120,17 @@
   display: block;
   margin: 0;
   position: absolute;
-  top: 43px;
-  left: 20px;
+  top: 46px;
+  left: 18px;
 
   @media (min-width: $tablet-width) {
     width: 140px;
     min-height: 10px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     background-color: $basic-white;
-    top: 56px;
-    left: 14px;
+    top: 64px;
+    left: 10px;
 
     & br {
       display: none;
@@ -156,7 +155,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-right: 3px;
   }
 
   @media (min-width: $desktop-width) {
