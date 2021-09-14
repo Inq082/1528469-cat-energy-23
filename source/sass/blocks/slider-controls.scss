@@ -1,19 +1,26 @@
 .slider-controls {
-  width: 71.25%;
-  margin: 0 auto;
+  width: 70.25%;
+  margin-left: 44px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 81.25%;
+    width: 74.25%;
+    margin-left: 74px;
+    position: absolute;
+    bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 82.25%;
+    width: 78.1%;
     margin: 0;
     margin-left: 90px;
-    margin-top: -60px;
+    margin-top: -40px;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 71px;
   }
 }
 
@@ -24,8 +31,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 29.64px;
 
     &::after {
       content: "";
@@ -72,7 +79,7 @@
 }
 
 .slider-controls__pointer {
-  width: 50%;
+  width: 45%;
   height: 6px;
   background-color: $basic-green;
   border-radius: 5px;
@@ -93,8 +100,8 @@
 
 .outer {
   @media (min-width: $tablet-width) {
-    width: 34px;
-    height: 34px;
+    width: 31px;
+    height: 31px;
     border: 1px solid $main-grey_lighten;
     border-radius: 50%;
     display: inline-flex;

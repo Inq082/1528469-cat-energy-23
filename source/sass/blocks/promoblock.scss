@@ -12,14 +12,14 @@
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     height: 302px;
+    width: 100%;
     background: rgba(104, 183, 56, 0.85);
-    left: 0;
+    right: 0;
     top: 0;
-    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
@@ -27,7 +27,7 @@
     color: $basic-dark;
     background-image: none;
 
-    &::after {
+    &::before {
       background-color: transparent;
     }
   }
@@ -42,10 +42,21 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
     }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 640px;
+      width: 50%;
+      background: rgba(104, 183, 56, 0.85);
+      background-size: right top;
+    }
   }
 }
 
 .promoblock__wrapper {
+  position: relative;
+  z-index: 9999;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -54,6 +65,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 494px 552px;
+    grid-template-rows: 294px 68px;
+    padding-top: 90px;
   }
 }
 
@@ -66,7 +79,7 @@
 
   @media (min-width: $tablet-width) {
     width: 414px;
-    padding-top: 36px;
+    padding-top: 40px;
     padding-left: 87px;
     margin-bottom: 41px;
     font-size: 60px;
@@ -75,9 +88,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 223px;
+    padding-top: 132px;
     padding-left: 80px;
-    margin-bottom: 40px;
   }
 }
 
@@ -89,7 +101,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
-    padding-left: 87px;
+    padding-left: 89px;
     font-size: 20px;
     line-height: 20px;
     text-align: start;
@@ -126,11 +138,12 @@
   @media (min-width: $desktop-width) {
     margin-top: 0;
     margin-left: -46px;
-    padding-top: 140px;
+    padding-top: 50px;
   }
 }
 
 .promoblock__button {
+  margin-top: 3px;
   font-size: 14px;
   line-height: 18px;
   display: block;
@@ -157,7 +170,10 @@
     width: 244px;
     height: 37px;
     padding-top: 17px;
-    margin-left: 82px;
+    margin-left: 90px;
     z-index: 3;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 82px;
   }
 }

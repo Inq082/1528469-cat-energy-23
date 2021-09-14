@@ -1,5 +1,10 @@
 .form-section {
   padding-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-left: 40px;
+  }
 }
 
 .form-section__intro {

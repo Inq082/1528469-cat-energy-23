@@ -7,8 +7,8 @@
   justify-content: center;
   border-bottom: 1px solid $basic-light-accent;
   text-align: center;
-  padding-top: 36px;
-  padding-bottom: 28px;
+  padding-top: 38px;
+  padding-bottom: 31px;
 
   &:active {
     opacity: 60%;
@@ -16,26 +16,26 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-top: 22px;
+    padding-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 28px;
+    padding-top: 30px;
   }
 }
 
 .page-footer__social {
   border-bottom: 1px solid $basic-light-accent;
-  padding: 18px 0;
+  padding: 20px 0 18px 0;
 
   @media (min-width: $tablet-width) {
     border: none;
     margin-left: 28px;
-    padding-top: 8px;
+    padding-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 12px;
+    padding-top: 17px;
   }
 }
 
@@ -70,7 +70,7 @@
   padding: 22px 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 6px;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {

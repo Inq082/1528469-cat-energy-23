@@ -3,6 +3,8 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  padding-top: 3px;
+  height: 1697px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
@@ -28,7 +30,7 @@
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid $main-light;
   margin: 0 -20px;
-  padding: 19px 20px 25px;
+  padding: 20px 20px 25px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 35%;
