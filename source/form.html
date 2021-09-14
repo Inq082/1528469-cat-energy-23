@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/152.svg">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -36,9 +40,9 @@
   <h1 class="page-form__title container">Подбор программы</h1>
   <section class="form-section">
     <h2 class="visually-hidden">Форма подбора программы питания</h2>
-    <p class="form-section__intro container">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+    <p class="form-section__intro">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     <form class="form-section__form form" action="#" method="post">
-      <div class="form__wrapper form__container container">
+      <div class="form__wrapper form__container">
         <fieldset class="form__cat-data cat-data form__fieldset">
           <legend class="visually-hidden">личные данные</legend>
           <ul class="cat-data__list">
@@ -79,7 +83,7 @@
         </fieldset>
       </div>
       <div class="form__line">
-        <div class="form__wrapper container">
+        <div class="form__wrapper">
           <fieldset class="form__contact-owner contact-owner form__fieldset">
             <legend class="form__title">Контактные данные<br class="form__title--indent">  (владельца кота)</legend>
             <ul class="contact-owner__list form__wrapper">
@@ -120,7 +124,7 @@
         </div>
       </div>
       <div class="form__line">
-        <div class="form__wrapper container">
+        <div class="form__wrapper">
           <fieldset class="form__comment comment form__fieldset">
             <legend class="form__title">Комментарий</legend>
             <label class="comment__label">
@@ -130,7 +134,7 @@
         </div>
       </div>
       <div class="form__line">
-        <div class="form__wrapper container">
+        <div class="form__wrapper">
           <fieldset class="form__additionally additionally form__fieldset">
             <legend class="form__title">Дополнительно</legend>
             <ul class="additionally__list">
@@ -155,7 +159,7 @@
           </fieldset>
         </div>
       </div>
-      <div class="form__wrapper container">
+      <div class="form__wrapper">
         <button class="form__button button" type="submit">Отправить заявку</button>
         <p class="form__legend">* — Обязательные поля</p>
       </div>

@@ -27,12 +27,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 52px;
+    margin-left: 80px;
     row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 76px;
+    grid-template-columns: 569px 572px;
+    column-gap: 79px;
     margin-top: 52px;
   }
 }
