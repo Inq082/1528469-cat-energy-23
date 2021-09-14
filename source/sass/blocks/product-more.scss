@@ -23,6 +23,7 @@
 .product-more {
   border-bottom: 1px solid $main-light;
   margin-bottom: 25px;
+  padding-top: 24px;
 
   &::before {
     content: "";
@@ -39,7 +40,6 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      align-self: center;
     }
   }
 

@@ -1,3 +1,13 @@
+.additional-goods {
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
 .additional-goods__title {
   font-size: 24px;
   line-height: 24px;
@@ -130,7 +140,7 @@
   width: 100%;
   height: 289px;
   margin-top: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background-color: rgba(104, 183, 56, 0.85);
   display: flex;
   flex-direction: column;
