@@ -7,13 +7,13 @@
 }
 
 @mixin oswald-medium {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
 @mixin arial ($font-size, $line-height) {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
 }
