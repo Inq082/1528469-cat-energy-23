@@ -1,0 +1,8 @@
+.inner {
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+}
