@@ -28,6 +28,7 @@
 
   @media (min-width: $desktop-width) {
     height: 630px;
+    padding-top: 23px;
   }
 }
 
@@ -74,45 +75,5 @@
     width: 436px;
     padding-top: 140px;
     margin-bottom: 52px;
-  }
-}
-
-.example-slider {
-  @media (min-width: $tablet-width) {
-    min-width: 690px;
-    grid-row: 1 / 4;
-    grid-column: 2 / 3;
-    margin-top: -16px;
-    margin-left: -6px;
-    padding-bottom: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -48px;
-    margin-left: 8px;
-  }
-}
-
-.example-slider__image {
-  max-width: 111%;
-  width: 311px;
-  height: 232px;
-  margin-bottom: 25px;
-  margin-left: -20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 100%;
-    width: 708px;
-    height: 620px;
-    margin-bottom: -1px;
-    margin-left: 7px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 116%;
-    margin-bottom: 3px;
-    padding-left: 75px;
-    height: 653px;
-    width: 694px;
   }
 }

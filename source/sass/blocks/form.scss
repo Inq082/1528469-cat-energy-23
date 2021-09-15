@@ -212,3 +212,27 @@
 .form__cat-data {
   margin-bottom: 10px;
 }
+
+.form__input:focus + .contact-owner__icon--mail path {
+  stroke: $basic-green;
+}
+
+.form__input:focus + .contact-owner__icon--mail line {
+  stroke: $basic-green;
+}
+
+.form__input:focus + .contact-owner__icon--phone path {
+  fill: $basic-green;
+}
+
+.form__input--error + .contact-owner__icon--phone path {
+  fill: $basic-error;
+}
+
+.form__input--error + .contact-owner__icon--mail path {
+  stroke: $basic-error;
+}
+
+.form__input--error + .contact-owner__icon--mail line {
+  stroke: $basic-error;
+}
