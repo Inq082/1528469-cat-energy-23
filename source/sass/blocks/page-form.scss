@@ -1,25 +1,19 @@
-.page-form {
-  @media (min-width: $tablet-width) {
-    width: 730px;
-  }
-}
-
 .page-form__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  padding-top: 27px;
+  padding-top: 29px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 40px;
-    padding-left: 70px;
+    margin: 0 40px;
+    padding-top: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 188px 0 0;
     margin: 0 auto;
-    padding-top: 188px;
   }
 }

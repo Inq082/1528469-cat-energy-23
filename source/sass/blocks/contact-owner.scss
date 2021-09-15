@@ -26,14 +26,17 @@
   margin-top: 30px;
 
   @media (min-width: $tablet-width) {
+    grid-template-rows: 1fr 1fr;
     margin-top: 52px;
     row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 76px;
+    grid-template-columns: 569px 572px;
+    column-gap: 79px;
     margin-top: 52px;
+    margin-left: 80px;
+    margin-bottom: -69px;
   }
 }
 
@@ -51,28 +54,4 @@
 .contact-owner__icon {
   position: absolute;
   right: 16px;
-}
-
-.form__input:focus + .contact-owner__icon--mail path {
-  stroke: $basic-green;
-}
-
-.form__input:focus + .contact-owner__icon--mail line {
-  stroke: $basic-green;
-}
-
-.form__input:focus + .contact-owner__icon--phone path {
-  fill: $basic-green;
-}
-
-.form__input--error + .contact-owner__icon--phone path {
-  fill: $basic-error;
-}
-
-.form__input--error + .contact-owner__icon--mail path {
-  stroke: $basic-error;
-}
-
-.form__input--error + .contact-owner__icon--mail line {
-  stroke: $basic-error;
 }
