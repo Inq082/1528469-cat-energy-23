@@ -6,10 +6,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-    column-gap: 25px;
-  }
 }
 
 .social__link:hover {
@@ -68,5 +64,3 @@
 .social__link {
   color: $special_grey-2;
 }
-
-
