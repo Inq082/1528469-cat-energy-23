@@ -80,8 +80,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 6px;
-    margin-left: 40px;
-    padding-left: 40px;
+    padding-left: 10px;
   }
 }
 
@@ -150,7 +149,7 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
-    margin-left: 80px;
+    margin-left: -29px;
   }
 }
 
@@ -165,6 +164,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 80px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -198,10 +199,10 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 569px 570px;
-    column-gap: 80px;
+    column-gap: 83px;
     align-items: center;
     padding-bottom: 62px;
-    margin-left: 81px;
+    margin-left: -29px;
   }
 }
 

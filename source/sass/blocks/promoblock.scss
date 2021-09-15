@@ -36,7 +36,7 @@
     padding-bottom: 54px;
     background-image: url("../img/index-background-desktop.jpg");
     background-position: right top;
-    background-size: 50% 694px;
+    background-size: 50% auto;
     pointer-events: none;
 
     @media (min-resolution: 2dppx) {
@@ -49,7 +49,7 @@
       height: 694px;
       width: 50%;
       background: rgba(104, 183, 56, 0.85);
-      background-size: right top;
+      background-position: right top;
     }
   }
 }
