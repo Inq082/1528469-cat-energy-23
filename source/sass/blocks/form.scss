@@ -81,6 +81,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 6px;
     padding-left: 10px;
+    margin-left: 72px;
   }
 }
 
@@ -149,7 +150,7 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
-    margin-left: -29px;
+    margin-left: 81px;
   }
 }
 
@@ -164,7 +165,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 80px;
-    max-width: 1220px;
+    width: auto;
     margin: 0 auto;
   }
 }
@@ -202,7 +203,7 @@
     column-gap: 83px;
     align-items: center;
     padding-bottom: 62px;
-    margin-left: -29px;
+    margin-left: 80px;
   }
 }
 
@@ -212,28 +213,4 @@
 
 .form__cat-data {
   margin-bottom: 10px;
-}
-
-.form__input:focus + .contact-owner__icon--mail path {
-  stroke: $basic-green;
-}
-
-.form__input:focus + .contact-owner__icon--mail line {
-  stroke: $basic-green;
-}
-
-.form__input:focus + .contact-owner__icon--phone path {
-  fill: $basic-green;
-}
-
-.form__input--error + .contact-owner__icon--phone path {
-  fill: $basic-error;
-}
-
-.form__input--error + .contact-owner__icon--mail path {
-  stroke: $basic-error;
-}
-
-.form__input--error + .contact-owner__icon--mail line {
-  stroke: $basic-error;
 }

@@ -25,7 +25,7 @@
   flex-basis: 100%;
   display: grid;
   grid-template-rows: auto auto auto auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 140px 140px;
   align-items: end;
   border-top: 1px solid $main-light;
   margin: 0 -20px;
@@ -33,6 +33,7 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 35%;
+    grid-template-columns: auto;
     position: relative;
     margin: 0;
     padding-left: 39px;
@@ -45,6 +46,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 14%;
+    grid-template-columns: auto;
     padding-left: 39px;
     padding-right: 35px;
     padding-bottom: 32px;

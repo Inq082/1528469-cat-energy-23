@@ -37,7 +37,6 @@
     background-image: url("../img/index-background-desktop.jpg");
     background-position: right top;
     background-size: 50% auto;
-    pointer-events: none;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -68,7 +67,7 @@
     grid-template-columns: 494px 552px;
     grid-template-rows: 294px 68px;
     padding-top: 90px;
-    margin-left: 109px;
+    pointer-events: none;
   }
 }
 
@@ -76,13 +75,14 @@
   margin: 0;
   margin-bottom: 26px;
   padding-top: 26px;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
     width: 414px;
     padding-top: 40px;
-    padding-left: 87px;
+    padding-left: 88px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -155,8 +155,8 @@
   background-color: $basic-green;
   color: $basic-white;
   text-align: center;
-  vertical-align: center;
   text-transform: uppercase;
+  pointer-events: auto;
 
   &:hover {
     background-color: $basic-green2;

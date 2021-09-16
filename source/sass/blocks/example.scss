@@ -40,6 +40,7 @@
 
 .example__title {
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   margin-bottom: 33px;
   margin-top: 18px;
@@ -75,5 +76,56 @@
     width: 436px;
     padding-top: 140px;
     margin-bottom: 52px;
+  }
+}
+
+.example__button {
+  padding: 4px 10px 6px 11px;
+  font-family: "Oswald", "Arial", sans-serif;
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    border-bottom: 1px dotted $special_grey;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0%, 0%, 0%, 0.4);
+    }
+
+    &:focus {
+      border-bottom: 1px solid rgba(0%, 0%, 0%, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+.example__button--before {
+  margin-left: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: -5px;
+  }
+}
+
+.example__button--after {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: -5px;
   }
 }

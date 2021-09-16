@@ -1,5 +1,4 @@
 .contact-owner {
-  color: $special_dark-grey;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -35,7 +34,7 @@
     grid-template-columns: 569px 572px;
     column-gap: 79px;
     margin-top: 52px;
-    margin-left: -29px;
+    margin-left: 80px;
     margin-bottom: -69px;
   }
 }
@@ -54,4 +53,28 @@
 .contact-owner__icon {
   position: absolute;
   right: 16px;
+}
+
+.contact-owner__input:focus + .contact-owner__icon--mail path {
+  stroke: $basic-green;
+}
+
+.contact-owner__input:focus + .contact-owner__icon--mail line {
+  stroke: $basic-green;
+}
+
+.contact-owner__input:focus + .contact-owner__icon--phone path {
+  fill: $basic-green;
+}
+
+.contact-owner__input--error + .contact-owner__icon--phone path {
+  fill: $basic-error;
+}
+
+.contact-owner__input--error + .contact-owner__icon--mail path {
+  stroke: $basic-error;
+}
+
+.contact-owner__input--error + .contact-owner__icon--mail line {
+  stroke: $basic-error;
 }
