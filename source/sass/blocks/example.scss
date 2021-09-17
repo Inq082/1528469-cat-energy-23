@@ -1,20 +1,19 @@
 .example {
   background-color: $main-gray_back;
-  height: 696px;
   padding-top: 3px;
   position: relative;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     background: none;
     margin-bottom: 70px;
-    height: 1079px;
 
     &::after {
       content: "";
       position: absolute;
       background-color: $main-gray_back;
       width: 100%;
-      height: 462px;
+      height: 43%;
       bottom: 1px;
       left: 0;
       z-index: -1;
@@ -22,13 +21,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 424px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    height: 630px;
-    padding-top: 23px;
+    padding: 23px 0 0;
+
+    &::after {
+      height: 71%;
+    }
   }
 }
 

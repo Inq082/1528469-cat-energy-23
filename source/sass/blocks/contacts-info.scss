@@ -60,10 +60,8 @@
     position: absolute;
     background-color: $basic-white;
     width: 430px;
-    height: 135px;
-    padding-top: 61px;
-    padding-left: 77px;
-    padding-right: 66px;
+    height: auto;
+    padding: 61px 66px 56px 77px;
     display: grid;
     grid-template-columns: 171px 181px;
     column-gap: 70px;

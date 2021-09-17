@@ -129,9 +129,8 @@
 .form__button {
   border-style: none;
   text-transform: uppercase;
-  height: 40px;
+  height: auto;
   width: 100%;
-  padding: 0;
   background-color: $basic-green;
   color: $basic-white;
   font-size: 16px;
@@ -144,7 +143,6 @@
   @media (min-width: $tablet-width) {
     width: 282px;
     font-size: 20px;
-    height: 52px;
     margin-top: 0;
   }
 
